@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>New User</title>
+<style>
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(iron-man.gif) no-repeat center fixed; 
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.SignUp-box{
+    width: 900px;
+    height: 550px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: left;
+    font-size: 35px;
+    font-family: Arial Black;
+}
+.SignUp-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.SignUp-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.SignUp-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.SignUp-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.SignUp-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
+</style>
+
+</head>
+<body>
+<img src="Stark_Industries_logo_2.png" alt="STARK INDUSTRIES" width="350" height="57" style="float: left;">
+<div class="SignUp-box">
+    
+        <h1>New User</h1>
+            <form action="SignUpController" method="post"> 
+            <p>Username</p>
+            <input type="text" name="user" placeholder="Enter Username" required >
+            <p>Password</p>
+            <input type="password" name="pass" placeholder="Enter Password" required >
+            <p>Email ID</p>
+            <input type="text" name="email" placeholder="Enter Email" required >
+            <p>Mobile</p>
+            <input type="text" name="mob" placeholder="Enter Mobile Number" required >
+            <p>Address</p>
+            <input type="text" name="addr" placeholder="Enter Address" required >
+            <input type="submit" name="submit" value="Submit">
+            
+            </form>
+        
+        
+</div>
+</body>
+</html>
